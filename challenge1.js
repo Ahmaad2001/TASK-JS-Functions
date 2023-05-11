@@ -32,6 +32,22 @@ console.log(age);
  * -- tr: it should print `Merhaba NAME`
  */
 
+function printHello(name, language) {
+  if (language == "en") {
+    console.log(`hello ${name}`);
+  } else if (language == "es") {
+    console.log(`hola ${name}`);
+  } else if (language == "fr") {
+    console.log(`bonjour ${name}`);
+  } else if (language == "tr") {
+    console.log(`merhaba ${name}`);
+  } else {
+    console.log("ERROR");
+  }
+}
+
+console.log(printHello("ahmad", "fr"));
+
 /**
  * Task 4:
  * Create a function named `printMax`

@@ -6,13 +6,10 @@
  * e.g.
  * greet("Hamza") logs "Hello Hamza"
  */
-const Name = "Hamza";
 function greet(name) {
-  return `Hello ${Name}`;
+  console.log("Hello" + " " + name);
 }
-const Greeting = greet(Name);
-console.log(Greeting);
-
+greet("Hamza");
 /**
  * isOdd(n):
  * - receives a number n
@@ -23,9 +20,14 @@ console.log(Greeting);
  * isOdd(10) -> false
  */
 function isOdd(n) {
-  // Your code here
+  if (n % 2 === 1) {
+    return true;
+  } else {
+    return false;
+  }
 }
-
+console.log(isOdd(7));
+console.log(isOdd(10));
 /**
  * oddsSmallerThan(n):
  * - receives a number n
@@ -36,9 +38,14 @@ function isOdd(n) {
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  // Your code here
+  if (n % 2 === 1) {
+    return Math.floor(n / 2);
+  } else {
+    return false;
+  }
 }
-
+console.log(oddsSmallerThan(7));
+console.log(oddsSmallerThan(15));
 /**
  * squareOrDouble(n):
  * - receives a number n
@@ -50,5 +57,11 @@ function oddsSmallerThan(n) {
  * squareOrDouble(9) -> 81
  */
 function squareOrDouble(n) {
-  // Your code here
+  if (n % 2 === 1) {
+    return n * n;
+  } else if (n % 2 === 0) {
+    return n * 2;
+  }
 }
+console.log(squareOrDouble(16));
+console.log(squareOrDouble(9));
