@@ -46,7 +46,7 @@ function printHello(name, language) {
   }
 }
 
-console.log(printHello("ahmad", "fr"));
+printHello("ahmad", "fr");
 
 /**
  * Task 4:
