@@ -4,6 +4,10 @@
  * - that just prints your name on the screen
  */
 
+function printName() {
+  console.log("ahmad");
+}
+printName();
 /**
  * Task 2:
  * Create a function named `printAge`
@@ -11,7 +15,12 @@
  * - and prints the age on the screen.
  * - Age = current year - birth
  */
-
+const yearOfBirth = 2001;
+function printAge(birthYear) {
+  return "2023" - yearOfBirth;
+}
+const age = printAge();
+console.log(age);
 /**
  * Task 3:
  * Create a function named `printHello`
@@ -29,3 +38,13 @@
  * - that takes 2 parameters as numbers
  * - should print out the bigger number
  */
+function printMax(x, y) {
+  if (x > y) {
+    return x;
+  }
+  if (y > x) {
+    return y;
+  }
+}
+const biggerNumber = printMax(12, 8);
+console.log(biggerNumber);

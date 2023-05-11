@@ -6,9 +6,12 @@
  * e.g.
  * greet("Hamza") logs "Hello Hamza"
  */
+const Name = "Hamza";
 function greet(name) {
-  // Your code here
+  return `Hello ${Name}`;
 }
+const Greeting = greet(Name);
+console.log(Greeting);
 
 /**
  * isOdd(n):
