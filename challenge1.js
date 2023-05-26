@@ -15,12 +15,11 @@ printName();
  * - and prints the age on the screen.
  * - Age = current year - birth
  */
-const yearOfBirth = 2001;
+
 function printAge(birthYear) {
-  return "2023" - yearOfBirth;
+  return 2023 - birthYear;
 }
-const age = printAge();
-console.log(age);
+console.log(printAge(2001));
 /**
  * Task 3:
  * Create a function named `printHello`
