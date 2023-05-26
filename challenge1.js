@@ -61,5 +61,6 @@ function printMax(x, y) {
     return y;
   }
 }
-const biggerNumber = printMax(12, 8);
-console.log(biggerNumber);
+//const biggerNumber = printMax(12, 8);
+//console.log(biggerNumber);
+console.log(printMax(12, 13));
